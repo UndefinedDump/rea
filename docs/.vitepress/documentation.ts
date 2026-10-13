@@ -228,6 +228,11 @@ export const documentationSections = [
         source: "guides/data/packet-captures.md",
         route: "/packet-captures",
       },
+      {
+        text: "Packet capture summaries",
+        source: "guides/data/pcap-analysis.md",
+        route: "/pcap-analysis",
+      },
     ],
   },
   {

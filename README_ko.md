@@ -139,6 +139,7 @@ REA에는 Node.js 22.x(>=22.19), 24.x(>=24.11) 또는 26+와 npm이 필요합니
 | JavaScript / Electron | 모듈, 임포트, 소스 맵, 라우트, IPC, 네이티브 애드온 관계                      | Node.js와 npm; [애플리케이션 분석](https://rea.tools/ko/guides/javascript/)                                                                                          |
 | 웹사이트              | 페이지 구조, 스크립트, 네트워크 관찰 결과, 요청한 스크린샷                    | Chrome 계열 브라우저; [브라우저 분석](https://rea.tools/ko/guides/browser/)                                                                                          |
 | 저장된 네트워크 캡처  | 요청, 응답, 접근 가능한 페이로드, 소스 위치                                   | HAR; mitmproxy 네이티브 캡처에는 Linux의 mitmdump; [캡처 가이드](docs/guides/web/web-network-captures.md)                                                            |
+| 패킷 캡처             | 엔드포인트, DNS, TLS SNI, 프로토콜 분포, HTTP 요청                            | 호출자 제공 tshark 및 capinfos; [pcap 가이드](docs/guides/data/pcap-analysis.md)                                                                                     |
 | .NET 어셈블리         | 메타데이터, CIL 명령, 선언된 네이티브 의존성, 빌드 비교                       | 정적 검사; [관리 코드 가이드](docs/guides/managed/managed-code-analysis.md)                                                                                          |
 | Android APK           | 매니페스트 선언, 클래스, 디컴파일된 메서드, 참조                              | Linux/macOS/Windows x64의 헤드리스 JADX와 전체 JDK; [Android 가이드](docs/guides/android/android-analysis.md)                                                        |
 | Android 기기          | 기기, 패키지, 프로세스, 로그, 덤프, 화면 캡처, APK/파일 전송                  | 호출자 제공 adb(에뮬레이터 또는 실제 기기); [ADB 가이드](docs/guides/android/adb-device-analysis.md)                                                                 |
@@ -263,7 +264,7 @@ npx rea-agents@latest setup
 
 ## 스타 기록
 
-🎉 **GitHub 스타 110,000개, 감사합니다!**
+🎉 **GitHub 스타 170,000개, 감사합니다!**
 
 REA를 사용하고, 버그를 보고하고, 기능을 요청하고, 빌드를 테스트하고, 수정에 기여해 주신 모든 분께 감사드립니다.
 
@@ -289,7 +290,7 @@ applicable licenses.
 
 REA에 도움을 보태 주세요! [issue를 등록](https://github.com/morluto/rea/issues)해 버그나 기능을 제안하거나, [pull request를 보내](https://github.com/morluto/rea/pulls) 코드와 문서를 개선할 수 있습니다.
 
-개발 환경과 검사 항목은 [CONTRIBUTING.md](CONTRIBUTING.md), 검증 절차는 [테스트 가이드](docs/development/testing.md), 프로젝트 구조는 [아키텍처 지도](docs/architecture/architecture.mermaid)를 참고하세요.
+개발 환경과 검사 항목은 [CONTRIBUTING.md](CONTRIBUTING.md), 검증 절차는 [테스트 가이드](docs/development/testing.md), 프로젝트 구조는 [아키텍처 지도](docs/architecture.mermaid)를 참고하세요.
 
 ## 라이선스
 

@@ -151,7 +151,7 @@ assembly. Older member Evidence without `selection` remains readable.
 
 Start by identifying the artifact with `inspect_managed_artifact`, then inspect
 its types and CIL with `inspect_managed_members`. Use [member comparison](#member-comparison)
-for another build, and [managed/native boundary rules](#managednative-boundary-rules)
+for another build, and [managed/native boundary rules](#managed-native-boundaries)
 when matching declared native calls to supplied native Evidence. Static inspection
 does not load or execute the assembly. Reconstructed structure and unresolved
 native/runtime questions retain their own authority and coverage.
@@ -221,6 +221,7 @@ provider evidence; names or vtable similarity alone do not prove that a native
 function implements a specific managed method.
 
 <div id="managednative-boundary-rules"></div>
+<div id="managed-native-boundaries"></div>
 
 ## Managed/native boundary rules
 

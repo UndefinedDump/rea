@@ -139,6 +139,7 @@ REA потребує Node.js 22.x (>=22.19), 24.x (>=24.11) або 26+, а та�
 | JavaScript / Electron                | Модулі, імпорти, карти вихідного коду, маршрути, IPC і зв'язки з нативними доповненнями                           | Node.js і npm; [аналіз застосунків](https://rea.tools/uk/guides/javascript/)                                                                                          |
 | Сайти                                | Структура сторінки, скрипти, мережеві спостереження й запитані знімки екрана                                      | Браузер сімейства Chrome; [аналіз браузера](https://rea.tools/uk/guides/browser/)                                                                                     |
 | Збережені мережеві захоплення        | Запити, відповіді, доступні корисні дані та місця в джерелі                                                       | HAR; mitmdump у Linux для захоплень у власному форматі mitmproxy; [посібник мережевих захоплень](docs/guides/web/web-network-captures.md)                             |
+| Захоплення пакетів                   | Кінцеві точки, DNS, TLS SNI, розподіл протоколів та HTTP-запити                                                   | Надані викликаючою стороною tshark та capinfos; [підручник pcap](docs/guides/data/pcap-analysis.md)                                                                   |
 | Збірки .NET                          | Метадані, інструкції CIL, оголошені нативні залежності й порівняння збірок                                        | Статична перевірка; [посібник керованого коду](docs/guides/managed/managed-code-analysis.md)                                                                          |
 | Android APK                          | Оголошення маніфесту, класи, декомпільовані методи й посилання                                                    | JADX без графічного інтерфейсу й повний JDK у Linux/macOS/Windows x64; [посібник Android](docs/guides/android/android-analysis.md)                                    |
 | Пристрої Android                     | Пристрої, пакети, процеси, журнали, дампи, знімки екрана та передавання APK/файлів                                | adb, наданий викликаючою стороною (емулятор або пристрій); [підручник ADB](docs/guides/android/adb-device-analysis.md)                                                |
@@ -261,7 +262,7 @@ npx rea-agents@latest setup
 
 ## Історія зірок
 
-🎉 **110 000 зірок на GitHub — дякуємо!**
+🎉 **170 000 зірок на GitHub — дякуємо!**
 
 Дякуємо всім, хто використовує REA, повідомляє про помилки, пропонує нові функції, тестує збірки й допомагає з виправленнями.
 
@@ -287,7 +288,7 @@ applicable licenses.
 
 Будемо раді вашій допомозі з REA! [Відкрийте issue](https://github.com/morluto/rea/issues), щоб повідомити про помилку чи запропонувати функцію, або [надішліть pull request](https://github.com/morluto/rea/pulls) з поліпшеннями коду чи документації.
 
-Налаштування середовища розробки й перевірки описано в [CONTRIBUTING.md](CONTRIBUTING.md), шляхи верифікації — у [посібнику тестування](docs/development/testing.md), а структуру проєкту — на [схемі архітектури](docs/architecture/architecture.mermaid).
+Налаштування середовища розробки й перевірки описано в [CONTRIBUTING.md](CONTRIBUTING.md), шляхи верифікації — у [посібнику тестування](docs/development/testing.md), а структуру проєкту — на [схемі архітектури](docs/architecture.mermaid).
 
 ## Ліцензія
 

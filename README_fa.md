@@ -139,6 +139,7 @@ REA به Node.js 22.x (>=22.19)، 24.x (>=24.11) یا 26+، به‌همراه np
 | برنامه‌های فلاتر         | هش اسنپ‌شات دارت، هش کتابخانه‌ها به تفکیک ABI و اصالت بیلد موتور                      | هیچ (تحلیل ایستا APK)؛ [راهنمای فلاتر](docs/guides/android/flutter-analysis.md)                                                                                 |
 | Firmware               | ناحیه‌ها، نتایج استخراج و تحویل به ابزارهای تحلیل بومی                               | Binwalk / Unblob در لینوکس؛ [راهنمای Firmware](docs/guides/firmware/firmware-analysis.md)                                                                      |
 | بسته‌های ضبط‌شده         | فیلدهای منتخب، مقادیر تکراری، فیلترها و قواعد رمزگشایی                              | Linux: TShark 4.x + prlimit; [راهنمای ضبط بسته](docs/guides/data/packet-captures.md)                                                                           |
+| ضبط بسته‌ها             | نقاط پایانی، DNS، TLS SNI، توزیع پروتکل و درخواست‌های HTTP                           | tshark و capinfos تأمین‌شده توسط فراخوان‌کننده؛ [راهنمای pcap](docs/guides/data/pcap-analysis.md)                                                                |
 | سیگنال‌های منطقی ضبط‌شده | توضیحات رمزگشا، بازه‌های نمونه و اطلاعات عیب‌یابی                                      | Linux: sigrok-cli 0.7.2 + prlimit; [راهنمای سیگنال‌ها](docs/guides/signals/signal-recordings.md)                                                                |
 | بسته‌ها و منابع         | فهرست فایل‌ها، digestها، فایل‌های plist، ساختار bundle اپل و منابع استخراج‌شده         | [راهنمای آرتیفکت و JavaScript](docs/guides/javascript/javascript-artifact-reconstruction.md)، [برنامه‌های اپل](docs/guides/apple/apple-application-analysis.md) |
 | رفتار فرایند           | خروجی ترمینال، تعاملات، وضعیت خروج، مشاهدات سیستم فایل و مقایسهٔ اجراها               | Linux/macOS با PTY بومی؛ [ضبط فرایند](docs/guides/runtime/process-capture.md)                                                                                  |
@@ -246,7 +247,7 @@ npx rea-agents@latest setup
 
 ## تاریخچهٔ ستاره‌ها
 
-🎉 **۱۱۰٬۰۰۰ ستارهٔ GitHub — سپاسگزاریم!**
+🎉 **۱۷۰٬۰۰۰ ستارهٔ GitHub — سپاسگزاریم!**
 
 از همهٔ کسانی که از REA استفاده می‌کنند، خطاها را گزارش می‌دهند، قابلیت‌های جدید پیشنهاد می‌کنند، buildها را آزمایش می‌کنند و در بهبود پروژه مشارکت دارند سپاسگزاریم.
 
@@ -266,7 +267,7 @@ applicable licenses.
 
 از کمک شما به REA استقبال می‌کنیم! برای گزارش خطا یا پیشنهاد قابلیت، یک [issue باز کنید](https://github.com/morluto/rea/issues) یا برای بهبود کد و مستندات [pull request بفرستید](https://github.com/morluto/rea/pulls).
 
-برای راه‌اندازی محیط توسعه و بررسی‌ها، [CONTRIBUTING.md](CONTRIBUTING.md)، برای مراحل اعتبارسنجی [آزمایش‌ها](docs/development/testing.md) و برای ساختار پروژه [نقشهٔ معماری](docs/architecture/architecture.mermaid) را ببینید.
+برای راه‌اندازی محیط توسعه و بررسی‌ها، [CONTRIBUTING.md](CONTRIBUTING.md)، برای مراحل اعتبارسنجی [آزمایش‌ها](docs/development/testing.md) و برای ساختار پروژه [نقشهٔ معماری](docs/architecture.mermaid) را ببینید.
 
 ## مجوز
 

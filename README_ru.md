@@ -147,6 +147,7 @@ REA требует Node.js 22.x (>=22.19), 24.x (>=24.11) или 26+, а так�
 | Приложения Flutter            | Хеш снапшота Dart, дайджесты библиотек по ABI и происхождение сборки движка                                                | Не требуется (статический разбор APK); [руководство по Flutter](docs/guides/android/flutter-analysis.md)                                                                    |
 | Прошивки                      | Области, результаты извлечения и передача в нативный анализ                                                                | Binwalk / Unblob в Linux; [руководство по прошивкам](docs/guides/firmware/firmware-analysis.md)                                                                             |
 | Записанные пакеты             | Выбранные поля, повторяющиеся значения, фильтры и правила декодирования                                                    | Linux: TShark 4.x + prlimit; [руководство по захватам](docs/guides/data/packet-captures.md)                                                                                 |
+| Захват пакетов                | Конечные точки, DNS, TLS SNI, распределение протоколов и HTTP-запросы                                                      | Предоставленные вызывающей стороной tshark и capinfos; [руководство по pcap](docs/guides/data/pcap-analysis.md)                                                             |
 | Записанные логические сигналы | Аннотации декодера, диапазоны отсчётов и диагностика                                                                       | Linux: sigrok-cli 0.7.2 + prlimit; [руководство по сигналам](docs/guides/signals/signal-recordings.md)                                                                      |
 | Пакеты и ресурсы              | Списки файлов, хеши, plist, структура пакетов Apple и извлечённые ресурсы                                                  | [Руководство по артефактам и JavaScript](docs/guides/javascript/javascript-artifact-reconstruction.md), [приложения Apple](docs/guides/apple/apple-application-analysis.md) |
 | Поведение процессов           | Вывод терминала, взаимодействия, наблюдения за завершением и файловой системой, сравнения запусков                         | Linux/macOS с нативным PTY; [захват процессов](docs/guides/runtime/process-capture.md)                                                                                      |
@@ -261,7 +262,7 @@ npx rea-agents@latest setup
 
 ## История звёзд
 
-🎉 **110 000 звёзд на GitHub — спасибо!**
+🎉 **170 000 звёзд на GitHub — спасибо!**
 
 Спасибо всем, кто использует REA, сообщает об ошибках, предлагает новые функции, тестирует сборки и помогает с исправлениями.
 
@@ -287,7 +288,7 @@ applicable licenses.
 
 Будем рады вашей помощи с REA! [Откройте issue](https://github.com/morluto/rea/issues), чтобы сообщить об ошибке или предложить функцию, либо [отправьте pull request](https://github.com/morluto/rea/pulls) с улучшениями кода или документации.
 
-Настройка среды разработки и проверки описаны в [CONTRIBUTING.md](CONTRIBUTING.md), направления проверки — в [руководстве по тестированию](docs/development/testing.md), а структура проекта — на [схеме архитектуры](docs/architecture/architecture.mermaid).
+Настройка среды разработки и проверки описаны в [CONTRIBUTING.md](CONTRIBUTING.md), направления проверки — в [руководстве по тестированию](docs/development/testing.md), а структура проекта — на [схеме архитектуры](docs/architecture.mermaid).
 
 ## Лицензия
 

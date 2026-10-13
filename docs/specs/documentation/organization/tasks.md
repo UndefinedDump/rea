@@ -11,3 +11,6 @@
 - [x] Require the published-page verification in documentation CI and manual builds.
 - [x] Resolve and validate the doubled catalog base URL and legacy managed anchor.
 - [x] Prepare the signed conflict-resolution update for the existing PR.
+- [x] Integrate current upstream documentation, PCAP summaries and CI qualification.
+- [x] Address review #4255489645 by checking every generated HTML page.
+- [x] Verify new-page link, anchor, source-target and escape failures in CI.

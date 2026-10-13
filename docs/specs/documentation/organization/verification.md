@@ -1,5 +1,29 @@
 # Verification after upstream integration
 
+## Review follow-up
+
+Integrated upstream 9928f357f and resolved current README, skill, sidebar, managed
+anchor and CI-plan conflicts while preserving new Qlog/PCAP content and the
+current CI qualification rules. The additional PCAP guide has its data-domain
+owner and unchanged public route. Two newly added relative links were corrected
+for their moved physical sources.
+
+Review #4255489645 identified that the legacy inventory did not cover new pages.
+The checker now discovers all output HTML independently of that baseline and
+uses parse5 for links, image sources, IDs and edit-footer attributes. It verifies
+physical source paths and realpath containment. Home and 404 pages have their
+links checked without requiring an edit footer.
+
+The actual build passed for 56 legacy routes, all 67 HTML pages, 65 physical edit
+sources and 581 distinct internal targets/anchors. All six static tasks,
+architecture guards and documentation-fact checks passed. 142 regressions passed
+across six files, including positive control output and intended failures for a
+broken link, missing anchor, wrong source and escaped source on new spec pages.
+The checker regression suite runs in documentation CI; both the script and its
+helper select that lane through the production CI planner.
+
+## Earlier integration evidence
+
 Integrated upstream c462a4ebd, preserving its new signal-recording guide, managed
 summary documentation, current translations and unknown-head pagination contract.
 

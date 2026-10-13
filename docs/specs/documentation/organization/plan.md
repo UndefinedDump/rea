@@ -41,3 +41,12 @@ legacy managed/native fragment alias while retaining the existing heading.
 Run this verification in documentation CI and the manual documentation build.
 Changes to the verifier itself must select the documentation lane; cover this
 using the actual CI planner against an isolated Git fixture.
+
+Review follow-up: retain the independent legacy baseline, then discover every
+generated HTML page and inspect its outgoing links, images, fragments and physical
+edit source. Home/404 pages have no edit footer; their links still need inspection.
+Use the existing parse5 parser for HTML attributes/IDs rather than regular
+expressions. Exercise the producing checker with independent miniature output
+fixtures, including new spec pages, broken anchors and invalid edit targets.
+Keep the newly added packet-summary guide under its data-domain owner while
+preserving its public route and current upstream documentation content.
