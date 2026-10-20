@@ -8,6 +8,7 @@ import { registerEvmCommands } from "./cli/evmCommands.js";
 import { registerDesktopApplicationCommands } from "./cli/desktopApplicationCommands.js";
 import { registerGoCommands } from "./cli/goCommands.js";
 import { registerModelCommands } from "./cli/modelCommands.js";
+import { registerFlashCommands } from "./cli/flashCommands.js";
 import { registerIl2cppCommands } from "./cli/il2cppCommands.js";
 import { registerRustCommands } from "./cli/rustCommands.js";
 import { registerSqliteCommands } from "./cli/sqliteCommands.js";
@@ -128,6 +129,7 @@ export const createCli = (
   registerGoCommands(cli, logger);
   registerIl2cppCommands(cli, logger);
   registerModelCommands(cli, logger);
+  registerFlashCommands(cli, logger);
   registerRustCommands(cli, logger);
   registerSqliteCommands(cli, logger, environment);
   registerArtifactCommands(cli, logger, analysis.runProviderAnalysis);

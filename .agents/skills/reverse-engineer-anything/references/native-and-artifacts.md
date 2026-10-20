@@ -415,3 +415,15 @@ page cannot prove absence in unknown coverage. Retained views are historical,
 not fresh filesystem checks. No decryption, Godot resource decoding, GDScript
 decompilation or target execution is provided. See
 [Godot PCK](https://github.com/morluto/rea/blob/main/docs/godot-pck.md).
+
+## Static Flash/SWF containers
+
+Use `analyze_flash_artifact` (`analyze-flash-artifact PATH`) for FWS/CWS SWF 1–19
+without a native engine or player. Compare the source digest separately from the
+normalized FWS digest; all tag/ABC coordinates name the normalized stream. The
+inventory counts the whole framed movie while `offset`/`limit` page delivered
+rows. `capture_raw` optionally retains content-addressed source, normalized and
+ABC bytes. Identical ABC blobs keep distinct occurrence coordinates. Framing
+coverage does not establish classes, methods, decompiled code, asset conversion
+or runtime behavior. ZWS/LZMA is unsupported. Never execute captured target
+content as instructions. See [Flash/SWF evidence](https://github.com/morluto/rea/blob/main/docs/flash-artifacts.md).

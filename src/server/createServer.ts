@@ -28,6 +28,8 @@ import { createDesktopApplicationService } from "../composition/desktop.js";
 import { registerDesktopApplicationTool } from "./registerDesktopApplicationTool.js";
 import { createGoBinaryService } from "../composition/go.js";
 import { createModelArtifactService } from "../composition/model.js";
+import { createFlashArtifactService } from "../composition/flash.js";
+import { registerFlashArtifactTools } from "./registerFlashArtifactTools.js";
 import { registerModelArtifactTools } from "./registerModelArtifactTools.js";
 import { createIl2cppMetadataService } from "../composition/il2cpp.js";
 import type { Il2cppMetadataService } from "../application/il2cpp/Il2cppMetadataService.js";
@@ -332,6 +334,7 @@ export const createServer = (
   const goBinary = options.goBinary ?? createGoBinaryService();
   const rustBinary = options.rustBinary ?? createRustBinaryService();
   const modelArtifact = createModelArtifactService();
+  const flashArtifact = createFlashArtifactService();
   const il2cppMetadata =
     options.il2cppMetadata ?? createIl2cppMetadataService();
   const peResources = createPeResourcesService();
@@ -420,6 +423,7 @@ export const createServer = (
       rustBinary.close(),
       il2cppMetadata.close(),
       modelArtifact.close(),
+      flashArtifact.close(),
       peResources.close(),
       electronFuses.close(),
       webNetworkCapture.close(),
@@ -502,6 +506,13 @@ export const createServer = (
     recordEvidence,
     analysisAdmission,
     evidenceById,
+  );
+  registerFlashArtifactTools(
+    server,
+    flashArtifact,
+    toolLogger,
+    recordEvidence,
+    analysisAdmission,
   );
   registerBinaryAnalysisTools(toolContext);
   registerReverseEngineeringTools(

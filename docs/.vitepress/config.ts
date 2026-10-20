@@ -31,6 +31,7 @@ export default defineConfig({
           { text: "Go build metadata", link: "/go-binaries" },
           { text: "IL2CPP metadata", link: "/il2cpp-metadata" },
           { text: "Model artifacts", link: "/model-artifacts" },
+          { text: "Flash/SWF containers", link: "/flash-artifacts" },
           { text: "Rust dependencies", link: "/rust-binaries" },
           {
             text: "JavaScript and Electron",

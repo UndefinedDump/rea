@@ -5,6 +5,7 @@ import { EVM_TOOL_CONTRACTS } from "./evm/evmToolContracts.js";
 import { DESKTOP_APPLICATION_TOOL_CONTRACTS } from "./desktopApplicationToolContracts.js";
 import { GO_TOOL_CONTRACTS } from "./go/goToolContracts.js";
 import { MODEL_TOOL_CONTRACTS } from "./model/modelToolContracts.js";
+import { FLASH_TOOL_CONTRACTS } from "./flash/flashToolContracts.js";
 import { IL2CPP_TOOL_CONTRACTS } from "./il2cpp/il2cppToolContracts.js";
 import { RUST_TOOL_CONTRACTS } from "./rust/rustToolContracts.js";
 import { SQLITE_TOOL_CONTRACTS } from "./sqlite/sqliteToolContracts.js";
@@ -51,6 +52,7 @@ export const TOOL_CONTRACTS = [
   ...GO_TOOL_CONTRACTS,
   ...IL2CPP_TOOL_CONTRACTS,
   ...MODEL_TOOL_CONTRACTS,
+  ...FLASH_TOOL_CONTRACTS,
   ...RUST_TOOL_CONTRACTS,
   ...WASM_TOOL_CONTRACTS,
   ...SQLITE_TOOL_CONTRACTS,

@@ -68,6 +68,8 @@ const EXECUTION_WORDING_EXCEPTIONS: Readonly<Record<string, string>> = {
   inspect_firmware_regions: "states there is no target execution",
   inspect_model_artifact:
     "states that model code and inference are never executed",
+  analyze_flash_artifact:
+    "states that Flash and ActionScript are never executed",
   extract_firmware: "states that extracted code is never executed",
   analyze_javascript_application: "reconstructs the graph without executing",
   reconcile_javascript_runtime: "never invents execution claims",

@@ -79,6 +79,18 @@ table. This command does not require a native analysis provider. See
 [SQLite database snapshots](sqlite-databases.md) for database/WAL identity,
 source-file handling and row-value semantics.
 
+## Static Flash/SWF containers
+
+```bash
+rea analyze-flash-artifact /absolute/path/movie.swf --json
+rea analyze-flash-artifact /absolute/path/movie.swf --capture_raw --json
+```
+
+FWS/CWS versions 1–19 return source and normalized-stream identities, frame
+metadata and a paged tag/ABC inventory. ABC semantics and embedded binary data
+remain uninterpreted. See [Flash/SWF evidence](flash-artifacts.md) for budgets,
+coordinate meaning, unsupported compression and remaining scope.
+
 ## Native analysis
 
 Inspect embedded Go build metadata without installing Go or configuring a
